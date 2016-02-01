@@ -1,0 +1,15 @@
+title: Ryan J Baxter
+disqus: ryanjbaxter # disqus short name
+gems: [jekyll-paginate]
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+author:
+  name: Ryan J Baxter
+  email: ryan@ryanjbaxter.com
+  github: ryanjbaxter
+  twitter: ryanjbaxter
+  pinterest: rbaxter85
+  linkedin: ryanjbaxter
+  resume: asd123  
+  bio: Father, Husband, Software Engineer
+  email_md5: 53a1e8497bf6bce5a4dd2b7674929d57
