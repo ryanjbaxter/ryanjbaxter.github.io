@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.marudot.com//iCal Event Maker
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+DTSTAMP:20140626T021346Z
+UID:20140626T021346Z-1365579236@marudot.com
+DTSTART;TZID=America/New_York:20140723T100000
+DTEND;TZID=America/New_York:20140723T110000
+SUMMARY:Bluemix Virtual Meetup - Mobile Cloud Services
+DESCRIPTION:Bluemix is IBM's exciting new cloud platform\, providing many services that developers can take advantage of when building their applications. One of the most popular sets of Bluemix services are the mobile services\, that let developers create their own mobile cloud backend in Bluemix. The mobile services provide backend capabilities for developer's mobile device applications\, offering powerful SDKs that enable developers to store\, sync\, and secure data\, run code in the Bluemix cloud\, and send Push notifications to devices. This webinar will provide an overview and demonstration of Bluemix as a platform\, the mobile services\, and how they were built. It will then go into more detail about how to take advantage of the mobile cloud services by incorporating them into your applications using the provided SDKs.﻿
+LOCATION:https://plus.google.com/events/c76m6241l2t3kioon9137fdhkes
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,34 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+disqus: ryanjbaxter
+google_analytics: dbyll
+gems: [jekyll-paginate]
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Ryan J. Baxter
+
+description: "Husband, Father, Software Engineer"
+author:
+  name: Ryan J Baxter
+  email: ryan@ryanjbaxter.com
+  github: ryanjbaxter
+  twitter: ryanjbaxter
+  pinterest: rbaxter85
+  linkedin: ryanjbaxter
+  bio: Husband, Father, Software Engineer
+  email_md5: 53a1e8497bf6bce5a4dd2b7674929d57
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH:
