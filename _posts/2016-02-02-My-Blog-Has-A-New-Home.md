@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 layout: post
 title: My Blog Has A New Home
 ---
+
 
 Lately I have been spending way too much time maintaining my blog.  Something on the server was spiking the CPU causing my blog to become unresponsive throughout the day.  To be honest I just don't have time to investigate issue like that any more so it was time to look into a more hands off solution.  A colleague of mine, [Jonathan Kaufman](http://jkaufman.io/), told me he just moved his blog to GitHub and is using [GitHub pages](https://pages.github.com/).  My main concnern about doing this was that I need the export all my content (posts, images, comments, etc.) from WordPress and make sure it would work on GitHub.  However, if it was possible, it will allow me to not have to host my own WordPress server and it would save me some money each month :) 
 
