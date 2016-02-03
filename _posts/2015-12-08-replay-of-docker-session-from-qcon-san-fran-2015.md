@@ -13,6 +13,4 @@ categories:
 ---
 Last month I gave a talk on deploying Docker containers to the cloud at QCon San Francisco.  In this talk I cover some of the challenges you face deploying Docker containers in a production environment and how using a cloud solution like Bluemix can eliminate those challenges.  I walk through some of the key benefits of using Docker on Bluemix and then dive into a demo showing how some of the features work.  Below is the replay of my session.  Enjoy!
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wlnRwn4gF9E" frameborder="0" allowfullscreen></iframe>
