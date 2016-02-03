@@ -16,6 +16,4 @@ Yesterday during the keynote at the <a href="http://softwarearchitecturecon.com/
 
 &nbsp;
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CKIO-_7_XMg" frameborder="0" allowfullscreen></iframe>

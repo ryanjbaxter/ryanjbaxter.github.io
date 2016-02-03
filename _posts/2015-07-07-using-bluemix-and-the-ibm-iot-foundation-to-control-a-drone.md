@@ -15,9 +15,7 @@ Drones have been getting a lot of attention lately for both good and bad reasons
 
 &nbsp;
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/-nxiAQJMaW4" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 

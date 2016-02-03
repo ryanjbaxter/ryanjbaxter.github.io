@@ -157,9 +157,7 @@ So how does this work?  Where does the HTTP server come from?  Well besides th
 
 &nbsp;
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/8oWsdto5mpU" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 

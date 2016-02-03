@@ -25,9 +25,7 @@ To demonstrate this I have created a short video showing you how.
 
 &nbsp;
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/322NPTgUS7E" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 
@@ -49,9 +47,7 @@ In addition my session from MWLUG was recorded, so you can watch that as well.
 
 &nbsp;
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/LwnI9ZLJ5tU" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 
@@ -62,3 +58,5 @@ In addition my session from MWLUG was recorded, so you can watch that as well.
 &nbsp;
 
 Finally you can find my slides from MWLUG on SlideShare.
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/GUhfQeojKcLDnb" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RyanBaxter/mwlug-bluemix-38465731" title="MWLUG Bluemix" target="_blank">MWLUG Bluemix</a> </strong> from <strong><a href="//www.slideshare.net/RyanBaxter" target="_blank">Ryan Baxter</a></strong> </div>

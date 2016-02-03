@@ -17,9 +17,7 @@ Today I was looking at some of the new <a href="http://jamesthom.as/blog/2015/04
 
 &nbsp;
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/N6LZjswqD4U" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 

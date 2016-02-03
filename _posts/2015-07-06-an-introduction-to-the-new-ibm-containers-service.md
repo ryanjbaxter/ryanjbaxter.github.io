@@ -26,8 +26,6 @@ So why choose to run your application as a Docker container vs a Cloud Foundry a
 
 With that said I have put together a video demonstrating the basic functionality of the IBM Containers service in Bluemix.  This should be enough to get you familiar with the service and get you on your way to deploying your own Docker containers to Bluemix.
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/WMUiBE_7MoU" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;

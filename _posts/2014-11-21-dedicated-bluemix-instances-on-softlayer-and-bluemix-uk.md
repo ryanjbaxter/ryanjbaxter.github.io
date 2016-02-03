@@ -31,9 +31,7 @@ The second announcement we made yesterday was around dedicated instances of Blue
 
 &nbsp;
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3Xp9hYIUNr8" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 

@@ -14,14 +14,11 @@ categories:
 ---
 Recently I had gotten a couple questions regarding how to build and deploy a Maven project to IBM Bluemix using IBM DevOps Services.  It is actually very simple to do, especially if you are familiar with the Maven and Cloud Foundry CLIs.  Below are two videos on how to setup a build and deploy stage for your Maven projects.
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/3BKyFY6KMgM" frameborder="0" allowfullscreen></iframe>
 </div>
 
 &nbsp;
 
 &nbsp;
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/IaZDp919j8Y" frameborder="0" allowfullscreen></iframe>

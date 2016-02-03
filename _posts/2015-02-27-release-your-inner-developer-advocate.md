@@ -11,9 +11,7 @@ categories:
 ---
 This year at IBM Interconnect I did my first Ignite talk.  If you are not familiar with what an Ignite talk is, check out this video on how to give one.
 
-<div class="jetpack-video-wrapper">
-  <span class='embed-youtube' style='text-align:center; display: block;'></span>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rRa1IPkBFbg" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 
