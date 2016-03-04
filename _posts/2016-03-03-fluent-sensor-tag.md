@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: "O'Reilly Fluent And A New Sensor Tag Demo"
+title: "O'Reilly Fluent And A New SensorTag Demo"
 categories: 
   - BlueMix
   - Cloud
