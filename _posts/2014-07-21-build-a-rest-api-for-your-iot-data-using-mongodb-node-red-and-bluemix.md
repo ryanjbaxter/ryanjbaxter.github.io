@@ -15,4 +15,4 @@ categories:
 ---
 In my [previous post](http://ryanjbaxter.com/2014/07/16/bluemix-and-the-internet-of-things/ "Bluemix and the Internet of Things") I talked about how to use the IBM IoT Cloud and Bluemix to build apps based on data coming from an TI Sensor Tag.  One of the apps I showed was Node-RED, however it was very basic in that it only printed the data to a debug node.  In this video I show you how you can store that data in a MongoDB and create a REST API for the data all in Node-RED without writing any code!  Enjoy!
 
-<span class="youtube"></span>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/_LBZagavmxY" frameborder="0" allowfullscreen></iframe>
