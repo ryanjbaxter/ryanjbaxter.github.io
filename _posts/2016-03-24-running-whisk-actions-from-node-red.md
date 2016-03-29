@@ -6,6 +6,7 @@ categories:
   - Cloud
   - Bluemix
 ---
+
 At IBM InterConnect 2016, IBM announced a new experimental compute runtime for Bluemix
 called [OpenWhisk](https://new-console.ng.bluemix.net/openwhisk/?cm_sp=bluemixblog-_-content-_-cta&cm_mc_uid=99069416036614567943703&cm_mc_sid_50200000=1458847907).  What is OpenWhisk?
 
@@ -181,3 +182,23 @@ You can easily start to build upon this flow to take advantage of other features
 Node-RED as well.  For example, you can invoke an action as the result of making
 an HTTP request to your own endpoint you setup in Node-RED.  Or you can invoke an action
 as the result of an event published to an MQTT topic you are subscribed to.
+
+### Update
+
+After I initially posted this blog post someone on Twitter pointed out to me that there were
+actually [nodes for Node-RED](http://flows.nodered.org/node/node-red-node-openwhisk)
+for running OpenWhisk actions and tasks!
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/ryanjbaxter">@ryanjbaxter</a> Nice post. And/or you could use the Openwhisk node directly - <a href="https://t.co/aB8fMSyGbK">https://t.co/aB8fMSyGbK</a> <a href="https://twitter.com/NodeRED">@NodeRED</a></p>&mdash; Dave CJ (@ceejay) <a href="https://twitter.com/ceejay/status/714495301638295552">March 28, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+After a little investigation I found out that these nodes were already available in
+the [Node-RED community boilerplate](https://console.ng.bluemix.net/catalog/starters/node-red-starter/)
+on Bluemix!  Under the covers I am sure they are probably using the REST APIs I mention
+in the post below but they encapsulate everything.
+
+As far as using them, the only tricky part is getting the auth token for the configuration
+node.  To do that just run `wsk property get --auth`.  Copy the resulting token into
+the OpenWhisk configuration node and you should be all set.
+
+![OpenWhisk Config](/wp-content/uploads/2016/03/Screen Shot 2016-03-28 at 5.04.57 PM.png)
