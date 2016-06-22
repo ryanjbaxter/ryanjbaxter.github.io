@@ -19,7 +19,8 @@ First lets make sure that we can fix the cross domain issue we were having when 
 
 Open _main.js_ in the _src/main/resources/static/controllers_ folder of your web service.  Change the _url_ property of the _$http_ call to _/races_.
 
-<pre class="font-size:15 lang:default decode:true">angular.module('ocrApp')
+~~~JavaScript
+angular.module('ocrApp')
   .controller('MainCtrl', function ($scope, $http) {
 	  $http({
           method: 'GET',
@@ -29,16 +30,19 @@ Open _main.js_ in the _src/main/resources/static/controllers_ folder of your web
       }, function(response) {
     	  console.error('Error requesting races');
       });
-  });</pre>
+  });
+~~~
 
 Make sure all the services are running and registered with Eureka and go to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>.  If you open the console of your browser you should no longer see any cross domain errors and your request to <a href="http://localhost:8080/races" target="_blank">http://localhost:8080/races</a> should complete successfully.
 
 Now lets leverage the data we are getting back from the request in the view for the main controller.  Open _main.html_ in the _src/main/resouces/static/views_ folder of the web service and change to code to be
 
-<pre class="font-size:15 lang:default decode:true ">&lt;h3&gt;Races&lt;/h3&gt;
-&lt;ul&gt;
-	&lt;li ng-repeat="race in races"&gt;&lt;a ng-href="/#/participants/{{race.id}}"&gt;{{race.name}}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</pre>
+~~~html
+<h3>Races</h3>
+<ul>
+	<li ng-repeat="race in races"><a ng-href="/#/participants/{{"{{race.id"}}}}">{{"{{race.name"}}}}</a></li>
+</ul>
+~~~
 
 After saving this file, go to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> and you should see a list of races
 
@@ -66,7 +70,7 @@ This code just makes a request to our participants service (through Zuul) to get
 
 <pre class="font-size:15 lang:default decode:true ">&lt;h3&gt;Participants&lt;/h3&gt;
 &lt;ul&gt;
-	&lt;li ng-repeat="participant in participants"&gt;{{participant.firstName}} {{participant.lastName}}&lt;/li&gt;
+	&lt;li ng-repeat="participant in participants"&gt;{{"{{participant.firstName"}}}} {{"{{participant.lastName"}}}}&lt;/li&gt;
 &lt;/ul&gt;</pre>
 
 Finally we need to tell Angular about the new participants view and controller.  Open _app.js_ in _src/main/resources/static/scripts_ and modify it so it looks like the following code
