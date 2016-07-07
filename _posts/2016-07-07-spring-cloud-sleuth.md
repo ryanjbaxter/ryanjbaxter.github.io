@@ -241,39 +241,7 @@ you all the details collected from the Sleuth logs including timing information 
 request.
 
 ![Zipkin UI](/wp-content/uploads/2016/06/Screen Shot 2016-06-22 at 5.23.08 PM.png)
-![Request Details](/wp-content/uploads/2016/06/Screen Shot 2016-06-22 at 5.24.36 PM.png@SpringBootApplication
-@RestController
-public class SleuthSampleApplication {
-
-    private static final Logger LOG = Logger.getLogger(SleuthSampleApplication.class.getName());
-
-    @Autowired
-    private RestTemplate restTemplate;
-
-    @Bean
-    public AlwaysSampler defailtSampler() { return new AlwaysSampler(); }
-
-	public static void main(String[] args) {
-		SpringApplication.run(SleuthSampleApplication.class, args);
-	}
-
-    @Bean
-    public RestTemplate getRestTemplate() {
-        return new RestTemplate();
-    }
-
-	@RequestMapping("/")
-	public String home() {
-		LOG.log(Level.INFO, "you called home");
-        return "Hello World";
-	}
-
-	@RequestMapping("/callhome")
-	public String callHome() {
-		LOG.log(Level.INFO, "calling home");
-        return restTemplate.getForObject("http://localhost:8080", String.class);
-	}
-})
+![Request Details](/wp-content/uploads/2016/06/Screen Shot 2016-06-22 at 5.24.36 PM.png)
 
 If you want to learn more about Spring Cloud Sleuth, I suggest you read through
 the [documentation](http://cloud.spring.io/spring-cloud-sleuth/spring-cloud-sleuth.html).
