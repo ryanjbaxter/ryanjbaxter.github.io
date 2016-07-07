@@ -1,10 +1,10 @@
 ---
-published: false
+published: true
 layout: post
 title: "Tracing In Microservices With Spring Cloud Sleuth"
 categories:
   - Cloud
-  - Bluemix
+  - Spring Cloud
   - Spring
 ---
 
