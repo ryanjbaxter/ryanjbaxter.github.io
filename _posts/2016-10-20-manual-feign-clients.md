@@ -52,7 +52,7 @@ class FooController {
 ~~~
 
 In this example we are creating two Feign Clients from the same interface,
-`FooClient.class`, which are using two different request interceptors.  Doing
+`FooClient.class`, which are using two different request interceptors.
 Doing this with the `@FeignClient` annotation plus configuration would not be possible,
 so in this case we need to create the clients using the Feign APIs.
 
