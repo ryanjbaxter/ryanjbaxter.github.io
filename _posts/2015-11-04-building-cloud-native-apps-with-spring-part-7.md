@@ -58,7 +58,7 @@ Open the _application.yml_ file for your Participants service and change the Eur
     hostname: ${vcap.application.uris[0]:localhost}
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
-      
+
 ---
 spring:
   profiles: cloud
@@ -72,7 +72,7 @@ Make sure you commit and push the changes you made to your _application.yml_ fil
 
 Now lets configure the build and deploy stages for our Participants service on Bluemix.  Back in the the project on IBM DevOps Services click the Build and Deploy button.  Click the Add Stage button to add a new stage.  Give the stage the name _Build_.  For the Input Type, select _SCM Repository_, this should automatically populate the Git URL field.  Make sure _master_ is selected under the Branch drop down.  In the Stage Trigger section select _“Run jobs whenever a change is pushed to Git”_.
 
-[<img class="alignnone size-full wp-image-1191" src="http://ryanjbaxter.com/wp-content/uploads/2015/10/765x706xScreen-Shot-2015-10-16-at-4.10.46-PM.png.pagespeed.ic.xd6rPpwRD9.png" alt="Screen Shot 2015-10-16 at 4.10.46 PM" width="765" height="706" />](http://ryanjbaxter.com/wp-content/uploads/2015/10/Screen-Shot-2015-10-16-at-4.10.46-PM.png)
+[<img class="alignnone size-full wp-image-1191" src="http://ryanjbaxter.com/wp-content/uploads/2015/10/Screen-Shot-2015-10-16-at-4.10.46-PM.png" alt="Screen Shot 2015-10-16 at 4.10.46 PM" width="765" height="706" />](http://ryanjbaxter.com/wp-content/uploads/2015/10/Screen-Shot-2015-10-16-at-4.10.46-PM.png)
 
 &nbsp;
 
@@ -87,7 +87,7 @@ mvn -B package
   </div>
 </div>
 
-[<img class="alignnone size-full wp-image-1194" src="http://ryanjbaxter.com/wp-content/uploads/2015/10/761x773xScreen-Shot-2015-10-16-at-4.37.47-PM.png.pagespeed.ic.7qtkP1S0_c.png" alt="Screen Shot 2015-10-16 at 4.37.47 PM" width="761" height="773" />](http://ryanjbaxter.com/wp-content/uploads/2015/10/Screen-Shot-2015-10-16-at-4.37.47-PM.png)
+[<img class="alignnone size-full wp-image-1194" src="http://ryanjbaxter.com/wp-content/uploads/2015/10/Screen-Shot-2015-10-16-at-4.37.47-PM.png" alt="Screen Shot 2015-10-16 at 4.37.47 PM" width="761" height="773" />](http://ryanjbaxter.com/wp-content/uploads/2015/10/Screen-Shot-2015-10-16-at-4.37.47-PM.png)
 
 Click Save to save the Build stage.
 
