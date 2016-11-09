@@ -42,27 +42,23 @@ is not actually a registered hostname, instead it is the name of the stores serv
 registered with the discovery server.  The `RestTemplate` in this case will replace
 the `stores` hostname with the host name (or IP address) of the stores service.
 
-As we are all aware of, making requests like this can be problematic.  For any number
-of reasons something may go wrong and the request will fail.  That is why, in robust
-applications, requests like these may be retried when failures are encountered.  It might
+As we are all aware, making requests like this can be problematic.  For any number
+of reasons something may go wrong and the request could fail.  That is why, in robust
+applications, API requests like the one above may be retried when failures are encountered.  It might
 be the case that the service is completely down and we are never going to get a response.
 However it is equally as likely that the failure was due to some kind of fluke network issue
-and a subsequent request may succeed.  Or it could be the case that the given instance of
-the service experiencing problems but there is another instance available that might be
+and a subsequent request may succeed.  It could even be the case that a given instance of
+a service may be experiencing problems but there is another instance available that might be
 perfectly capable of handing our request.
 
-In Spring Cloud Brixton, load balanced `RestTemplate`s would use a `RestClient` provided
-by Netflix's Ribbon library.  This `RestClient` has logic built into it to retry
-failed requests, however, Netflix recently deprecated the `RestClient` so
-we needed to come up with another solution.  The initial HTTP client we used to replace
-the Netflix `RestClient` did not have any retry logic built into it.  If your request failed
-it was up to you, the developer, to retry the request.  As of `Camden.SR2` we have reintroduced
+In Spring Cloud, if you used a load balanced `RestTemplate` to make your API request and the request
+failed it was up to you, the developer, to retry the request.  As of `Camden.SR2` we have introduced
 some retry handling into load balanced `RestTemplates`.  We now take advantage of the awesome
 [Spring Retry project](https://github.com/spring-projects/spring-retry) to provide the retry
-logic.  The good news is you can use the same [Ribbon properties as before](http://cloud.spring.io/spring-cloud-static/Camden.SR2/#_retrying_failed_requests)
+logic.  You can use [Ribbon properties](http://cloud.spring.io/spring-cloud-static/Camden.SR2/#_retrying_failed_requests)
 to configure how many retry requests are made, and which requests are retried.
 
-In the future we will be using Spring Retry when making API requests using Feign as well
+In the future we will be using Spring Retry when making API requests with Feign as well
 as when requests are made through Zuul.
 
 Enjoy!
