@@ -7,6 +7,8 @@ categories:
   - Spring Cloud
   - Spring
 ---
+** NOTE: `ZuulFallbackProvider` has been deprecated in Spring Cloud Edgware, use `FallbackProvider` instead. **
+
 If you are a user of [Zuul from Spring Cloud Netflix](https://github.com/spring-cloud/spring-cloud-netflix/blob/master/docs/src/main/asciidoc/spring-cloud-netflix.adoc#router-and-filter-zuul), than you likely know
 that all the routes you configure that use Ribbon are also wrapped in Hystrix
 commands.  This nice little feature provides a circuit breaker for all
